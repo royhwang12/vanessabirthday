@@ -52,7 +52,7 @@ class _InitialMessageState extends State<InitialMessage> {
               ),
             ),
             SizedBox(
-              height: 60.0,
+              height: 50.0,
             ),
             AnimatedOpacity(
               opacity: opacityLevel,
