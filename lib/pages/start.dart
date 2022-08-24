@@ -41,7 +41,7 @@ class Start extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SpinKitPumpingHeart(
+                    SpinKitSquareCircle(
                       color: Colors.white,
                       size: 60.0,
                     ),
@@ -50,29 +50,24 @@ class Start extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SpinKitPumpingHeart(
+                    SpinKitSquareCircle(
                       color: Colors.white,
                       size: 60.0,
                     ),
                     SizedBox(
                       width: 100,
                     ),
-                    SpinKitPumpingHeart(
+                    SpinKitSquareCircle(
                       color: Colors.white,
                       size: 60.0,
                     ),
                   ],
                 ),
-                ClipOval(
-                  child: Image.asset(
-                    'assets/IMG_0521.HEIC',
-                  ),
-                ),
                 SizedBox(
                   height: 10.0,
                 ),
                 Text(
-                  'Happy Birthday Beautiful <3',
+                  'Flutter Quiz App',
                   style: TextStyle(
                     fontSize: 26.0,
                     color: Colors.white,
@@ -96,7 +91,6 @@ class Start extends StatelessWidget {
                         fontSize: 20.0,
                       ),
                     )),
-                Heart(),
               ]),
         ),
       ),
