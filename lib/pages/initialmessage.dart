@@ -58,10 +58,23 @@ class _InitialMessageState extends State<InitialMessage> {
               opacity: opacityLevel,
               duration: const Duration(seconds: 20),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/quiz');
+                },
                 child: Text('START'),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.white)),
+              ),
+            ),
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: const Duration(seconds: 5),
+              child: Text(
+                'If you get any question wrong you will be sent back here',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10.0,
+                ),
               ),
             ),
           ],
